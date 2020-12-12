@@ -33,6 +33,15 @@ services:
     networks:
       - kafka-demo
 
+  mongo:
+    image: mongo:latest
+    volumes:
+      - ./mongo/data:/mongo/data
+    networks:
+      - kafka-demo
+    ports:
+      - "27017:27017"
+
   httpd:
     image: centos/httpd-24-centos7:latest
     ports:
