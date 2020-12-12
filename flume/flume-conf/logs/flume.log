@@ -1,0 +1,266 @@
+12 Dec 2020 07:10:53,409 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider.start:62)  - Configuration provider starting
+12 Dec 2020 07:10:53,424 INFO  [conf-file-poller-0] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider$FileWatcherRunnable.run:138)  - Reloading configuration file:flume-kafka.properties
+12 Dec 2020 07:10:53,710 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+12 Dec 2020 07:10:53,711 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+12 Dec 2020 07:10:53,712 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+12 Dec 2020 07:10:53,712 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+12 Dec 2020 07:10:53,712 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+12 Dec 2020 07:10:53,713 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:c1
+12 Dec 2020 07:10:53,713 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:c1
+12 Dec 2020 07:10:53,713 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+12 Dec 2020 07:10:53,714 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:c1
+12 Dec 2020 07:10:53,714 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+12 Dec 2020 07:10:53,714 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+12 Dec 2020 07:10:53,715 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:c1
+12 Dec 2020 07:10:53,715 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+12 Dec 2020 07:10:53,715 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1117)  - Added sinks: k1 Agent: a1
+12 Dec 2020 07:10:53,718 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+12 Dec 2020 07:10:53,719 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+12 Dec 2020 07:10:53,719 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+12 Dec 2020 07:10:53,719 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:c1
+12 Dec 2020 07:10:53,720 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+12 Dec 2020 07:10:53,720 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+12 Dec 2020 07:10:53,720 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+12 Dec 2020 07:10:53,720 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:r1
+12 Dec 2020 07:10:53,721 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addComponentConfig:1203)  - Processing:k1
+12 Dec 2020 07:10:53,721 WARN  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.validateConfigFilterSet:623)  - Agent configuration for 'a1' has no configfilters.
+12 Dec 2020 07:10:53,744 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration.validateConfiguration:163)  - Post-validation flume configuration contains configuration for agents: [a1]
+12 Dec 2020 07:10:53,745 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:151)  - Creating channels
+12 Dec 2020 07:10:53,754 INFO  [conf-file-poller-0] (org.apache.flume.channel.DefaultChannelFactory.create:42)  - Creating instance of channel c1 type file
+12 Dec 2020 07:10:53,781 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:205)  - Created channel c1
+12 Dec 2020 07:10:53,782 INFO  [conf-file-poller-0] (org.apache.flume.source.DefaultSourceFactory.create:41)  - Creating instance of source r1, type exec
+12 Dec 2020 07:10:53,800 INFO  [conf-file-poller-0] (org.apache.flume.sink.DefaultSinkFactory.create:42)  - Creating instance of sink: k1, type: org.apache.flume.sink.kafka.KafkaSink
+12 Dec 2020 07:10:53,942 INFO  [conf-file-poller-0] (org.apache.flume.sink.kafka.KafkaSink.configure:318)  - Using the static topic click_events. This may be overridden by event headers
+12 Dec 2020 07:10:53,945 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.getConfiguration:120)  - Channel c1 connected to [r1, k1]
+12 Dec 2020 07:10:53,953 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:162)  - Starting new configuration:{ sourceRunners:{r1=EventDrivenSourceRunner: { source:org.apache.flume.source.ExecSource{name:r1,state:IDLE} }} sinkRunners:{k1=SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@4239a95b counterGroup:{ name:null counters:{} } }} channels:{c1=FileChannel c1 { dataDirs: [/flume/data/file-channel-temp/data-dir] }} }
+12 Dec 2020 07:10:53,954 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:169)  - Starting Channel c1
+12 Dec 2020 07:10:53,954 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.FileChannel.start:278)  - Starting FileChannel c1 { dataDirs: [/flume/data/file-channel-temp/data-dir] }...
+12 Dec 2020 07:10:55,183 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: CHANNEL, name: c1: Successfully registered new MBean.
+12 Dec 2020 07:10:55,183 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: CHANNEL, name: c1 started
+12 Dec 2020 07:10:55,193 ERROR [lifecycleSupervisor-1-0] (org.apache.flume.channel.file.FileChannel.start:295)  - Failed to start the file channel [channel=c1]
+java.lang.IllegalArgumentException: CheckpointDir /flume/data/file-channel-temp/checkpoint-dir could not be created
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:88)
+	at org.apache.flume.channel.file.Log.<init>(Log.java:303)
+	at org.apache.flume.channel.file.Log.<init>(Log.java:76)
+	at org.apache.flume.channel.file.Log$Builder.build(Log.java:276)
+	at org.apache.flume.channel.file.FileChannel.start(FileChannel.java:282)
+	at org.apache.flume.lifecycle.LifecycleSupervisor$MonitorRunnable.run(LifecycleSupervisor.java:249)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+12 Dec 2020 07:10:55,194 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:196)  - Starting Sink k1
+12 Dec 2020 07:10:55,195 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:207)  - Starting Source r1
+12 Dec 2020 07:10:55,198 INFO  [lifecycleSupervisor-1-2] (org.apache.flume.source.ExecSource.start:170)  - Exec source starting with command: sudo tcpdump -C 1 -w dat | sudo tail -F dat*
+12 Dec 2020 07:10:55,201 INFO  [lifecycleSupervisor-1-2] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: SOURCE, name: r1: Successfully registered new MBean.
+12 Dec 2020 07:10:55,202 INFO  [lifecycleSupervisor-1-2] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: SOURCE, name: r1 started
+12 Dec 2020 07:10:55,568 INFO  [pool-3-thread-1] (org.apache.flume.source.ExecSource$ExecRunnable.run:379)  - Command [sudo tcpdump -C 1 -w dat | sudo tail -F dat*] exited with 1
+12 Dec 2020 07:10:55,575 INFO  [lifecycleSupervisor-1-1] (org.apache.kafka.common.config.AbstractConfig.logAll:279)  - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka:9092, localhost:32778, localhost:32779, localhost:32780]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = gzip
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+12 Dec 2020 07:10:55,644 WARN  [lifecycleSupervisor-1-1] (org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses:56)  - Removing server kafka:9092 from bootstrap.servers as DNS resolution failed for kafka
+12 Dec 2020 07:10:55,778 INFO  [lifecycleSupervisor-1-1] (org.apache.kafka.common.utils.AppInfoParser$AppInfo.<init>:109)  - Kafka version : 2.0.1
+12 Dec 2020 07:10:55,779 INFO  [lifecycleSupervisor-1-1] (org.apache.kafka.common.utils.AppInfoParser$AppInfo.<init>:110)  - Kafka commitId : fa14705e51bd2ce5
+12 Dec 2020 07:10:55,781 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: SINK, name: k1: Successfully registered new MBean.
+12 Dec 2020 07:10:55,781 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: SINK, name: k1 started
+12 Dec 2020 07:10:55,783 ERROR [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.kafka.KafkaSink.process:255)  - Failed to publish events
+java.lang.IllegalStateException: Channel closed [channel=c1]. Due to java.lang.IllegalArgumentException: CheckpointDir /flume/data/file-channel-temp/checkpoint-dir could not be created
+	at org.apache.flume.channel.file.FileChannel.createTransaction(FileChannel.java:358)
+	at org.apache.flume.channel.BasicChannelSemantics.getTransaction(BasicChannelSemantics.java:122)
+	at org.apache.flume.sink.kafka.KafkaSink.process(KafkaSink.java:157)
+	at org.apache.flume.sink.DefaultSinkProcessor.process(DefaultSinkProcessor.java:67)
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: CheckpointDir /flume/data/file-channel-temp/checkpoint-dir could not be created
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:88)
+	at org.apache.flume.channel.file.Log.<init>(Log.java:303)
+	at org.apache.flume.channel.file.Log.<init>(Log.java:76)
+	at org.apache.flume.channel.file.Log$Builder.build(Log.java:276)
+	at org.apache.flume.channel.file.FileChannel.start(FileChannel.java:282)
+	at org.apache.flume.lifecycle.LifecycleSupervisor$MonitorRunnable.run(LifecycleSupervisor.java:249)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+12 Dec 2020 07:10:55,784 ERROR [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.SinkRunner$PollingRunner.run:158)  - Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: Failed to publish events
+	at org.apache.flume.sink.kafka.KafkaSink.process(KafkaSink.java:268)
+	at org.apache.flume.sink.DefaultSinkProcessor.process(DefaultSinkProcessor.java:67)
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalStateException: Channel closed [channel=c1]. Due to java.lang.IllegalArgumentException: CheckpointDir /flume/data/file-channel-temp/checkpoint-dir could not be created
+	at org.apache.flume.channel.file.FileChannel.createTransaction(FileChannel.java:358)
+	at org.apache.flume.channel.BasicChannelSemantics.getTransaction(BasicChannelSemantics.java:122)
+	at org.apache.flume.sink.kafka.KafkaSink.process(KafkaSink.java:157)
+	... 3 more
+Caused by: java.lang.IllegalArgumentException: CheckpointDir /flume/data/file-channel-temp/checkpoint-dir could not be created
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:88)
+	at org.apache.flume.channel.file.Log.<init>(Log.java:303)
+	at org.apache.flume.channel.file.Log.<init>(Log.java:76)
+	at org.apache.flume.channel.file.Log$Builder.build(Log.java:276)
+	at org.apache.flume.channel.file.FileChannel.start(FileChannel.java:282)
+	at org.apache.flume.lifecycle.LifecycleSupervisor$MonitorRunnable.run(LifecycleSupervisor.java:249)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+12 Dec 2020 07:11:00,786 ERROR [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.kafka.KafkaSink.process:255)  - Failed to publish events
+java.lang.IllegalStateException: Channel closed [channel=c1]. Due to java.lang.IllegalArgumentException: CheckpointDir /flume/data/file-channel-temp/checkpoint-dir could not be created
+	at org.apache.flume.channel.file.FileChannel.createTransaction(FileChannel.java:358)
+	at org.apache.flume.channel.BasicChannelSemantics.getTransaction(BasicChannelSemantics.java:122)
+	at org.apache.flume.sink.kafka.KafkaSink.process(KafkaSink.java:157)
+	at org.apache.flume.sink.DefaultSinkProcessor.process(DefaultSinkProcessor.java:67)
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: CheckpointDir /flume/data/file-channel-temp/checkpoint-dir could not be created
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:88)
+	at org.apache.flume.channel.file.Log.<init>(Log.java:303)
+	at org.apache.flume.channel.file.Log.<init>(Log.java:76)
+	at org.apache.flume.channel.file.Log$Builder.build(Log.java:276)
+	at org.apache.flume.channel.file.FileChannel.start(FileChannel.java:282)
+	at org.apache.flume.lifecycle.LifecycleSupervisor$MonitorRunnable.run(LifecycleSupervisor.java:249)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+12 Dec 2020 07:11:00,786 ERROR [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.SinkRunner$PollingRunner.run:158)  - Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: Failed to publish events
+	at org.apache.flume.sink.kafka.KafkaSink.process(KafkaSink.java:268)
+	at org.apache.flume.sink.DefaultSinkProcessor.process(DefaultSinkProcessor.java:67)
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalStateException: Channel closed [channel=c1]. Due to java.lang.IllegalArgumentException: CheckpointDir /flume/data/file-channel-temp/checkpoint-dir could not be created
+	at org.apache.flume.channel.file.FileChannel.createTransaction(FileChannel.java:358)
+	at org.apache.flume.channel.BasicChannelSemantics.getTransaction(BasicChannelSemantics.java:122)
+	at org.apache.flume.sink.kafka.KafkaSink.process(KafkaSink.java:157)
+	... 3 more
+Caused by: java.lang.IllegalArgumentException: CheckpointDir /flume/data/file-channel-temp/checkpoint-dir could not be created
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:88)
+	at org.apache.flume.channel.file.Log.<init>(Log.java:303)
+	at org.apache.flume.channel.file.Log.<init>(Log.java:76)
+	at org.apache.flume.channel.file.Log$Builder.build(Log.java:276)
+	at org.apache.flume.channel.file.FileChannel.start(FileChannel.java:282)
+	at org.apache.flume.lifecycle.LifecycleSupervisor$MonitorRunnable.run(LifecycleSupervisor.java:249)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+12 Dec 2020 07:11:03,229 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:125)  - Shutting down configuration: { sourceRunners:{r1=EventDrivenSourceRunner: { source:org.apache.flume.source.ExecSource{name:r1,state:START} }} sinkRunners:{k1=SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@4239a95b counterGroup:{ name:null counters:{runner.deliveryErrors=2} } }} channels:{c1=FileChannel c1 { dataDirs: [/flume/data/file-channel-temp/data-dir] }} }
+12 Dec 2020 07:11:03,229 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:129)  - Stopping Source r1
+12 Dec 2020 07:11:03,230 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.unsupervise:169)  - Stopping component: EventDrivenSourceRunner: { source:org.apache.flume.source.ExecSource{name:r1,state:START} }
+12 Dec 2020 07:11:03,230 INFO  [agent-shutdown-hook] (org.apache.flume.source.ExecSource.stop:190)  - Stopping exec source with command: sudo tcpdump -C 1 -w dat | sudo tail -F dat*
+12 Dec 2020 07:11:03,230 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: SOURCE, name: r1 stopped
+12 Dec 2020 07:11:03,231 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: SOURCE, name: r1. source.start.time == 1607757055202
+12 Dec 2020 07:11:03,231 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: SOURCE, name: r1. source.stop.time == 1607757063230
+12 Dec 2020 07:11:03,231 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.append-batch.accepted == 0
+12 Dec 2020 07:11:03,231 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.append-batch.received == 0
+12 Dec 2020 07:11:03,231 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.append.accepted == 0
+12 Dec 2020 07:11:03,231 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.append.received == 0
+12 Dec 2020 07:11:03,231 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.channel.write.fail == 0
+12 Dec 2020 07:11:03,232 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.event.read.fail == 0
+12 Dec 2020 07:11:03,232 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.events.accepted == 0
+12 Dec 2020 07:11:03,232 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.events.received == 0
+12 Dec 2020 07:11:03,232 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.generic.processing.fail == 0
+12 Dec 2020 07:11:03,232 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SOURCE, name: r1. src.open-connection.count == 0
+12 Dec 2020 07:11:03,232 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:139)  - Stopping Sink k1
+12 Dec 2020 07:11:03,232 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.unsupervise:169)  - Stopping component: SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@4239a95b counterGroup:{ name:null counters:{runner.deliveryErrors=2} } }
+12 Dec 2020 07:11:03,233 INFO  [agent-shutdown-hook] (org.apache.kafka.clients.producer.KafkaProducer.close:1090)  - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+12 Dec 2020 07:11:03,239 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: SINK, name: k1 stopped
+12 Dec 2020 07:11:03,239 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: SINK, name: k1. sink.start.time == 1607757055781
+12 Dec 2020 07:11:03,240 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: SINK, name: k1. sink.stop.time == 1607757063239
+12 Dec 2020 07:11:03,240 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. channel.kafka.event.send.time == 0
+12 Dec 2020 07:11:03,240 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. channel.rollback.count == 0
+12 Dec 2020 07:11:03,240 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.batch.complete == 0
+12 Dec 2020 07:11:03,240 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.batch.empty == 0
+12 Dec 2020 07:11:03,240 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.batch.underflow == 0
+12 Dec 2020 07:11:03,240 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.channel.read.fail == 0
+12 Dec 2020 07:11:03,240 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.connection.closed.count == 0
+12 Dec 2020 07:11:03,241 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.connection.creation.count == 0
+12 Dec 2020 07:11:03,241 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.connection.failed.count == 0
+12 Dec 2020 07:11:03,241 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.event.drain.attempt == 0
+12 Dec 2020 07:11:03,241 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.event.drain.sucess == 0
+12 Dec 2020 07:11:03,241 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: k1. sink.event.write.fail == 2
+12 Dec 2020 07:11:03,241 INFO  [agent-shutdown-hook] (org.apache.flume.sink.kafka.KafkaSink.stop:290)  - Kafka Sink k1 stopped. Metrics: SINK:k1{sink.batch.underflow=0, sink.event.write.fail=2, sink.connection.failed.count=0, sink.channel.read.fail=0, sink.connection.closed.count=0, channel.kafka.event.send.time=0, sink.event.drain.attempt=0, sink.batch.complete=0, sink.event.drain.sucess=0, sink.connection.creation.count=0, channel.rollback.count=0, sink.batch.empty=0}
+12 Dec 2020 07:11:03,241 INFO  [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:149)  - Stopping Channel c1
+12 Dec 2020 07:11:03,241 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.unsupervise:169)  - Stopping component: FileChannel c1 { dataDirs: [/flume/data/file-channel-temp/data-dir] }
+12 Dec 2020 07:11:03,242 INFO  [agent-shutdown-hook] (org.apache.flume.channel.file.FileChannel.stop:334)  - Stopping FileChannel c1 { dataDirs: [/flume/data/file-channel-temp/data-dir] }...
+12 Dec 2020 07:11:03,243 ERROR [agent-shutdown-hook] (org.apache.flume.node.Application.stopAllComponents:152)  - Error while stopping FileChannel c1 { dataDirs: [/flume/data/file-channel-temp/data-dir] }
+java.lang.IllegalStateException: Channel closed[channel=c1]
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:145)
+	at org.apache.flume.channel.file.FileChannel.getDepth(FileChannel.java:377)
+	at org.apache.flume.channel.file.FileChannel.stop(FileChannel.java:336)
+	at org.apache.flume.lifecycle.LifecycleSupervisor.unsupervise(LifecycleSupervisor.java:170)
+	at org.apache.flume.node.Application.stopAllComponents(Application.java:150)
+	at org.apache.flume.node.Application.stop(Application.java:112)
+	at org.apache.flume.node.Application$1.run(Application.java:369)
+12 Dec 2020 07:11:03,243 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.stop:78)  - Stopping lifecycle supervisor 13
+12 Dec 2020 07:11:03,246 INFO  [agent-shutdown-hook] (org.apache.flume.channel.file.FileChannel.stop:334)  - Stopping FileChannel c1 { dataDirs: [/flume/data/file-channel-temp/data-dir] }...

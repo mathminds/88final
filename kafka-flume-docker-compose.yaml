@@ -57,7 +57,7 @@ services:
     volumes:
       - "./flume/flume-conf:/flume-conf"
       - http-logs:/var/log/httpd24
-    entrypoint: ["flume-ng", "agent", "-n", "a1", "-c", "/opt/flume/conf", "-f", "/flume-conf/flume-kafka.properties"]
+    entrypoint: ["flume-ng", "agent", "-n", "a1", "-c", "/opt/flume/conf", "-f", "/flume-conf/flume-kafka.properties", "-Dflume.root.logger=INFO,console"]
     # flume-ng agent -n a1 -c /opt/flume/conf -f /flume-conf/flume-kafka.properties
     # entrypoint: ["sleep", "6000"]
     # flume-ng agent -n a1 -c /opt/flume/conf -f /flume-conf/flume-kafka.properties
