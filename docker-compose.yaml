@@ -1,0 +1,63 @@
+version: '3.5'
+networks:
+  kafka-demo:
+    name: kafka-demo-net
+    driver: bridge
+
+volumes:
+  http-logs:
+    external: true 
+
+services:
+  zookeeper:
+    image: zookeeper:3.4.9
+    ports:
+      - "2181:2181"
+    networks:
+      - kafka-demo
+  kafka:
+    image: wurstmeister/kafka:2.13-2.6.0
+    environment:
+      # KAFKA_BROKER_ID: 1
+      # (Hack for Mac)use this if you want to have docker host node to be used as broadcast ip
+#      HOSTNAME_COMMAND: "/sbin/ip route|awk '/src/ { print $$NF }'"
+      # Use below for Linux
+      HOSTNAME_COMMAND: "ip route get 1.2.3.4 | awk '{print $$7}'"
+      KAFKA_ADVERTISED_PORT: 9092
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_CREATE_TOPICS: "click_events:10:1"
+    depends_on:
+      - zookeeper
+    ports:
+      - 9092
+    networks:
+      - kafka-demo
+
+  httpd:
+    image: centos/httpd-24-centos7:latest
+    ports:
+        - "8080:8080"
+    networks:
+      - kafka-demo
+    volumes:
+      - "./htdocs:/var/www/html"
+      - http-logs:/var/log/httpd24
+    environment:
+      HTTPD_LOG_TO_VOLUME: 1
+    user: root
+
+  flume:
+    build:
+      context: ./flume
+      dockerfile: Dockerfile
+    depends_on:
+      - kafka
+    networks:
+      - kafka-demo
+    volumes:
+      - "./flume/flume-conf:/flume-conf"
+      - http-logs:/var/log/httpd24
+    entrypoint: ["flume-ng", "agent", "-n", "a1", "-c", "/opt/flume/conf", "-f", "/flume-conf/flume-kafka.properties"]
+    # flume-ng agent -n a1 -c /opt/flume/conf -f /flume-conf/flume-kafka.properties
+    # entrypoint: ["sleep", "6000"]
+    # flume-ng agent -n a1 -c /opt/flume/conf -f /flume-conf/flume-kafka.properties
